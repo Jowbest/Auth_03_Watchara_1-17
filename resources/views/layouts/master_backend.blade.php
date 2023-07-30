@@ -46,6 +46,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
@@ -55,10 +56,10 @@
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                        <img src="{{ asset('backend/assets/img/logoicon.png')}}" alt="">
+
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">
-                            IT Shop
+                        Namnom
                         </span>
                     </a>
 
@@ -73,32 +74,22 @@
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
                     <li class="menu-item active">
-                        <a href="index.html" class="menu-link">
+                        <a href="{{ route('home') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>
 
-                    <li class="menu-item">
-                        <a href="user.html" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Analytics">User</div>
-                        </a>
-                    </li>
+
 
                     <li class="menu-item">
-                        <a href="category.html" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-grid-alt"></i>
-                            <div data-i18n="Analytics">Category</div>
-                        </a>
-                    </li>
-
-                    <li class="menu-item">
-                        <a href="product.html" class="menu-link">
+                        <a href="{{ route('pro.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-cart-alt"></i>
                             <div data-i18n="Analytics">Product</div>
                         </a>
                     </li>
+
+
 
                 </ul>
 
@@ -160,10 +151,15 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Log Out</span>
                                         </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
                                     </li>
                                 </ul>
                             </li>
@@ -179,7 +175,7 @@
 
                     @yield('content')
 
-                
+
 
                     <!-- Footer -->
                     <footer class="content-footer footer bg-footer-theme">

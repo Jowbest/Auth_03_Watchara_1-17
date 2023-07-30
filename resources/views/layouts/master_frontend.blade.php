@@ -164,7 +164,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="text-primary text-uppercase mb-2">// ทีมงานของเรา</p>
-                <h1 class="display-6 mb-4">เราเป็นมืออาชีพมากด้วยทักษะของเรา</h1>
+                <h1 class="display-6 mb-4">ผู้จัดทำเว็บไซต์</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -172,7 +172,7 @@
                         <img class="img-fluid" src="{{ asset('frontend/img/team-1.jpg') }}" alt="">
                         <div class="team-text">
                             <div class="team-title">
-                                <h5>Aun Aunnisa</h5>
+                                <h5>นางสาวอันนิศา อามาตมนตรี</h5>
                                 <span>แค่เธอพูดว่าหิว เราก็พร้อมเป็นของอร่อยให้เธอแล้ว🍰 </span>
                             </div>
                             <div class="team-social">
@@ -183,28 +183,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item text-center rounded overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('frontend/img/team-2.jpg') }}" alt="">
-                        <div class="team-text">
-                            <div class="team-title">
-                                <h5>Pa Rn</h5>
-                                <span>ขนมหวานเนื้อนุ่มๆหากได้กินตอนอุ่นๆร้อนๆมันโคตรอร่อยคุณต้องลองจะอ้วนผอมอย่าไปแคร์🎂</span>
-                            </div>
-                            <div class="team-social">
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item text-center rounded overflow-hidden">
                         <img class="img-fluid" src="{{ asset('frontend/img/team-3.jpg') }}" alt="">
                         <div class="team-text">
                             <div class="team-title">
-                                <h5>Fi At</h5>
+                                <h5>นายภูบดี อรรณพเพ็ชร</h5>
                                 <span>ขอให้เธอหลับฝันดีในฝันมีขนมหวานแต่เราจะค่อยเติมน้ำตาลเพิ่มความหวานให้ฝันเธอ🍩</span>
                             </div>
                             <div class="team-social">
@@ -220,7 +205,7 @@
                         <img class="img-fluid" src="{{ asset('frontend/img/team-4.jpg') }}" alt="">
                         <div class="team-text">
                             <div class="team-title">
-                                <h5>Jowb Best</h5>
+                                <h5>สุภเดช ชลเทพ</h5>
                                 <span>อยากเอาใจโทรมๆไปโยนโครมที่ร้านขนม🍫🍩</span>
                             </div>
                             <div class="team-social">
@@ -376,3 +361,5 @@
 </body>
 
 </html>
+
+
